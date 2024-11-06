@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,299 +6,204 @@
 }
 
 body {
-  background-color: white; /* Full-page background color */
-  color: black; /* Default text color for readability */
-  min-height: 100vh; /* Ensure body covers full viewport height */
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  min-height: 100vh;
 }
 
 .genLayout {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
+  padding: 0 20px;
 }
 
-
-
-
+/* Navigation */
 .topmostNav {
-  background-color: #f0ecff; /* You can keep this or change it to blue */
-  padding-block: 1rem;
-  position: fixed;
+  background-color: #1e1e1e;
+  padding: 1rem 0;
+  position: static;
   width: 100%;
-  z-index: 10;
 }
 
 .innerNav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-block: 1rem;
+  align-items: center;
+}
+
+.innerNav h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
 }
 
 .navItems {
-  width: 600px;
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 
-.innerNav > h1 {
+.navItems a {
+  color: #fff;
   text-decoration: none;
-  text-transform: capitalize;
-  color: blue; /* Changed to blue */
-  font-weight: 900;
-}
-
-.innerNav > h1 > span {
-  color: red; /* Changed to red */
-}
-
-.navItems > a {
-  text-decoration: none;
-  color: red; /* Changed to red */
   text-transform: uppercase;
-  font-size: 14px;
+  font-weight: 500;
 }
 
-.navItems > a:first-child {
-  color: blue; /* Changed to blue */
-  font-weight: 700;
-  font-style: italic;
+.navItems a:hover {
+  color: #ff6347;
+  transition: color 0.3s ease;
 }
 
-.navItems > a:hover {
-  background-color: whitesmoke;
-  transition: background-color 0.3s ease;
-}
-
-.hamburger,
-#toggle {
-  display: none;
-}
-
-/* banner styling */
+/* Banner Section */
 .secOne {
-  border: 2px solid;
-  background-color: white;
-  padding-block: 4rem;
+  padding: 80px 0 50px;
+  background-color: #f1f1f1;
+  margin-top: 5rem;
 }
 
 .banner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 3rem;
+  align-items: center;
+  text-align: left;
 }
 
-.bannerContent > h1 {
-  font-size: x-large;
-  font-weight: 700;
-  color: blue; /* Changed to blue */
+.bannerContent h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1e1e1e;
 }
 
-.bannerContent > p {
-  margin-block: 0.6rem;
-  opacity: 0.4;
-  font-size: small;
-  font-style: italic;
-  color: red; /* Changed to red */
+.bannerContent p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 20px;
 }
 
-.bannerImg {
-  background-color: blue; /* Changed to blue */
-  height: 50vh;
-  width: 30%;
-  border-radius: 20px;
-}
-
-.bgBlue {
-  width: 300px;
-  height: 400px;
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-.bgBlue > img {
-  width: 100%;
-  height: 100%;
+.bannerImg img {
+  width: 250px; /* Reduced width */
+  height: 250px; /* Reduced height */
   object-fit: cover;
+  border-radius: 10px;
 }
 
-/* styling for services */
+/* Services Section */
 .services {
   display: flex;
-  margin-top: -3rem;
   justify-content: space-between;
+  margin: 50px 0;
 }
 
 .serviceCard {
-  background-color: grey;
-  width: 200px;
-  height: 200px;
-  box-shadow: 2px 3px 10px;
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 30%;
 }
 
-.serviceCard > p {
-  font-size: 40px;
-  font-style: italic;
-  color: blue; /* Changed to blue */
+.serviceCard span {
+  font-size: 3rem;
+  color: #ff6347;
 }
 
-.serviceCard > h3 {
-  font-size: large;
-  font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
-  color: red; /* Changed to red */
+.serviceCard h3 {
+  font-size: 1.5rem;
+  color: #1e1e1e;
+  margin-top: 15px;
 }
 
-/* base styling /secTwo */
+.serviceCard p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* About Section */
 .secTwo {
-  margin: 5rem;
-  padding-block: 4rem;
+  margin: 60px 0;
+  padding: 40px 0;
+  background-color: #ffffff;
 }
 
 .base {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.baseContent > h1 {
-  text-transform: capitalize;
-  color: blue; /* Changed to blue */
+.baseContent h1 {
+  font-size: 2rem;
+  color: #1e1e1e;
 }
 
-.baseContent > p {
-  font-size: xx-small;
-  font-style: italic;
-  color: red; /* Changed to red */
+.baseContent p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
-.progress {
-  width: 50%;
-  margin: 1rem;
-}
-
-.progressinfo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0.1rem;
-}
-
-.baseContent > button {
-  margin-top: 1rem;
-  background-color: blue; /* Changed to blue */
-  padding: 0.4rem 1rem;
-  color: #fff;
-  text-transform: capitalize;
-  border-radius: 5px;
-}
-
-.baseContent > button:hover {
-  cursor: pointer;
-  background-color: red; /* Changed hover to red */
-}
-
-.baseImg {
-  background-color: #e3e3e3; /* You may change this as well if needed */
-  height: 50vh;
-  width: 40%;
-}
-
-.baseImg > img {
-  width: 100%;
-  height: 100%;
-  border-radius: 100px;
+.baseImg img {
+  width: 400px;
+  height: 400px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-.but {
-  border: 5px solid red; /* Changed border to red */
-  margin: 3rem;
-  padding: 10px;
-  background-color: blue; /* Changed to blue */
-  color: white; /* Changed text color to white for contrast */
-  border-radius: 50px;
-}
-
-.but:hover {
-  background-color: whitesmoke;
-  transition: background-color 0.3s ease;
+/* Button Styling */
+button {
+  background-color: #ff6347;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
   cursor: pointer;
+  font-size: 1rem;
 }
 
-/* educa sec */
+button:hover {
+  background-color: #ff4500;
+  transition: background-color 0.3s ease;
+}
+
+/* Education Section */
 .secThree {
-  background-color: white;
-  margin: 5rem;
-  padding-block: 4rem;
-  font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
+  background-color: #fafafa;
+  padding: 60px 0;
 }
 
-.eduSec {
-  list-style: none;
-  padding: 0;
+.eduSec h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.eduContent li {
-  color: blue; /* Changed to blue */
-  margin: 1rem;
+.eduSec ul {
+  list-style-type: none;
 }
 
-/* skills */
-.secFour {
-  background-color: white;
-  margin: 5rem;
-  padding-block: 4rem;
-  font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
+.eduSec li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
 }
 
-.skillContent {
-  list-style: none;
-  padding: 0;
-}
-
-.skills ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skills li {
-  color: red; /* Changed to red */
-  margin: 1rem;
-}
-
-/* contact */
+/* Contact Section */
 .secFive {
-  padding: 40px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
+  padding: 60px 0;
 }
 
 .contact {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.contactContent {
-  display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 200px;
 }
 
-.contactLeft,
-.contactRight {
-  flex: 1;
+.contactLeft img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
 }
 
 .contactForm {
@@ -306,116 +212,223 @@ body {
   gap: 20px;
 }
 
-.contactImage img {
-  width: 300px;
-  height: 500px;
-}
-
-#message {
-  width: 400px;
-  height: 300px;
+.contactForm input,
+.contactForm textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button[type="submit"] {
-  padding: 10px 20px;
-  background-color: red; /* Changed to red */
-  color: #fff;
+  background-color: #ff6347;
+  color: white;
+  padding: 12px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
-  border-radius: 10px;
+  font-size: 1rem;
 }
 
 button[type="submit"]:hover {
-  background-color: blue; /* Changed hover to blue */
+  background-color: #ff4500;
 }
 
-/* Contact Information Styling */
-.contactInfo {
-  list-style: none;
-  padding: 0;
-  margin-top: 2rem;
-}
-
-/* project */
-.secSeven {
-  background-color: white;
-  margin: 5rem;
-  padding-block: 4rem;
-  font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-}
-
-.projectContent {
-}
-
-.projects ul {
-  list-style: none;
-  padding: 0;
-}
-
-.projects li {
-  color: blue; /* Changed to blue */
-  margin: 1rem;
-}
-
-/* footer */
-.secSix {
-  background-color: white;
-  margin: 5rem;
-  padding-block: 4rem;
-}
-
+/* Footer Section */
 .foot {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 10px 0;
-  background-color: #f0ecff; /* You can keep this or change it to blue */
-  border-top: 5px solid red; /* Changed to red */
-  margin-top: 20px;
-  color: red; /* Changed to red */
+  margin-top: 50px;
 }
 
-/* blog */
-.blogNav {
-  background-color: #f0ecff; /* You can keep this or change it to blue */
-  padding-block: 1rem;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
-
-.bloginnerNav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-block: 1rem;
-}
-
-/* RESPONSIVENESS */
-
-/* responsive code */
-@media (min-width: 260px) and (max-width: 460px) {
+/* iPhone 12 Mini (375px) */
+@media only screen and (max-width: 375px) {
+  /* Navbar Adjustments */
   .innerNav {
-    padding: 0 10px;
+    flex-direction: column;
+    align-items: flex-start;
   }
+
   .navItems {
     display: none;
     flex-direction: column;
-  }
-  .hamburger {
-    display: block;
-    font-size: 25px;
-    font-weight: 900;
-    color: blue; /* Changed to blue */
-    cursor: pointer;
+    gap: 10px;
+    width: 100%;
   }
 
-  #toggle:checked + .navRight .navItems {
+  .navItems a {
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+  }
+
+  #toggle:checked ~ .navItems {
     display: flex;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #f0ecff; /* You can keep this or change it to blue */
+  }
+
+  /* Banner Section Adjustments */
+  .banner {
     flex-direction: column;
-   
+    align-items: center;
+  }
+
+  .bannerContent h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .bannerContent p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .bannerImg img {
+    width: 200px; /* Smaller image */
+    height: 200px;
+  }
+
+  /* Services Section Adjustments */
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceCard {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  /* About Section Adjustments */
+  .base {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .baseContent h1 {
+    font-size: 1.8rem;
+  }
+
+  .baseContent p {
+    font-size: 0.95rem;
+  }
+
+  .baseImg img {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Education Section Adjustments */
+  .eduSec h2 {
+    font-size: 1.5rem;
+  }
+
+  .eduSec ul {
+    padding-left: 20px;
+  }
+
+  .eduSec li {
+    font-size: 0.95rem;
+  }
+
+  /* Contact Section Adjustments */
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactLeft img {
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+  }
+
+  /* Footer Adjustments */
+  .foot {
+    font-size: 0.85rem;
+  }
+}
+
+/* iPad Landscape (768px) */
+@media only screen and (max-width: 768px) {
+  /* Navbar Adjustments */
+  .innerNav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navItems {
+    display: flex;
+    gap: 15px;
+  }
+
+  /* Banner Section Adjustments */
+  .bannerContent h1 {
+    font-size: 2rem;
+  }
+
+  .bannerContent p {
+    font-size: 1.1rem;
+  }
+
+  .bannerImg img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Services Section Adjustments */
+  .services {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .serviceCard {
+    width: 32%;
+  }
+
+  /* About Section Adjustments */
+  .base {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .baseContent h1 {
+    font-size: 2.2rem;
+  }
+
+  .baseContent p {
+    font-size: 1.1rem;
+  }
+
+  .baseImg img {
+    width: 35%;
+  }
+
+  /* Education Section Adjustments */
+  .eduSec h2 {
+    font-size: 1.8rem;
+  }
+
+  .eduSec ul {
+    padding-left: 20px;
+  }
+
+  /* Contact Section Adjustments */
+  .contact {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contactForm {
+    width: 60%;
+  }
+
+  .contactLeft img {
+    width: 30%;
+  }
+}
