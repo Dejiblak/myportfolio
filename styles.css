@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white; /* Full-page background color */
+  color: black; /* Default text color for readability */
+  min-height: 100vh; /* Ensure body covers full viewport height */
+}
+
+.genLayout {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+
+.topmostNav {
+  background-color: #f0ecff; /* You can keep this or change it to blue */
+  padding-block: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.innerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.navItems {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.innerNav > h1 {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: blue; /* Changed to blue */
+  font-weight: 900;
+}
+
+.innerNav > h1 > span {
+  color: red; /* Changed to red */
+}
+
+.navItems > a {
+  text-decoration: none;
+  color: red; /* Changed to red */
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.navItems > a:first-child {
+  color: blue; /* Changed to blue */
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navItems > a:hover {
+  background-color: whitesmoke;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger,
+#toggle {
+  display: none;
+}
+
+/* banner styling */
+.secOne {
+  border: 2px solid;
+  background-color: white;
+  padding-block: 4rem;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 3rem;
+}
+
+.bannerContent > h1 {
+  font-size: x-large;
+  font-weight: 700;
+  color: blue; /* Changed to blue */
+}
+
+.bannerContent > p {
+  margin-block: 0.6rem;
+  opacity: 0.4;
+  font-size: small;
+  font-style: italic;
+  color: red; /* Changed to red */
+}
+
+.bannerImg {
+  background-color: blue; /* Changed to blue */
+  height: 50vh;
+  width: 30%;
+  border-radius: 20px;
+}
+
+.bgBlue {
+  width: 300px;
+  height: 400px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.bgBlue > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* styling for services */
+.services {
+  display: flex;
+  margin-top: -3rem;
+  justify-content: space-between;
+}
+
+.serviceCard {
+  background-color: grey;
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 3px 10px;
+}
+
+.serviceCard > p {
+  font-size: 40px;
+  font-style: italic;
+  color: blue; /* Changed to blue */
+}
+
+.serviceCard > h3 {
+  font-size: large;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red; /* Changed to red */
+}
+
+/* base styling /secTwo */
+.secTwo {
+  margin: 5rem;
+  padding-block: 4rem;
+}
+
+.base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.baseContent > h1 {
+  text-transform: capitalize;
+  color: blue; /* Changed to blue */
+}
+
+.baseContent > p {
+  font-size: xx-small;
+  font-style: italic;
+  color: red; /* Changed to red */
+}
+
+.progress {
+  width: 50%;
+  margin: 1rem;
+}
+
+.progressinfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.1rem;
+}
+
+.baseContent > button {
+  margin-top: 1rem;
+  background-color: blue; /* Changed to blue */
+  padding: 0.4rem 1rem;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
+.baseContent > button:hover {
+  cursor: pointer;
+  background-color: red; /* Changed hover to red */
+}
+
+.baseImg {
+  background-color: #e3e3e3; /* You may change this as well if needed */
+  height: 50vh;
+  width: 40%;
+}
+
+.baseImg > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.but {
+  border: 5px solid red; /* Changed border to red */
+  margin: 3rem;
+  padding: 10px;
+  background-color: blue; /* Changed to blue */
+  color: white; /* Changed text color to white for contrast */
+  border-radius: 50px;
+}
+
+.but:hover {
+  background-color: whitesmoke;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* educa sec */
+.secThree {
+  background-color: white;
+  margin: 5rem;
+  padding-block: 4rem;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+}
+
+.eduSec {
+  list-style: none;
+  padding: 0;
+}
+
+.eduContent li {
+  color: blue; /* Changed to blue */
+  margin: 1rem;
+}
+
+/* skills */
+.secFour {
+  background-color: white;
+  margin: 5rem;
+  padding-block: 4rem;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+}
+
+.skillContent {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  color: red; /* Changed to red */
+  margin: 1rem;
+}
+
+/* contact */
+.secFive {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contactContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 200px;
+}
+
+.contactLeft,
+.contactRight {
+  flex: 1;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactImage img {
+  width: 300px;
+  height: 500px;
+}
+
+#message {
+  width: 400px;
+  height: 300px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: red; /* Changed to red */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: blue; /* Changed hover to blue */
+}
+
+/* Contact Information Styling */
+.contactInfo {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+/* project */
+.secSeven {
+  background-color: white;
+  margin: 5rem;
+  padding-block: 4rem;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+}
+
+.projectContent {
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li {
+  color: blue; /* Changed to blue */
+  margin: 1rem;
+}
+
+/* footer */
+.secSix {
+  background-color: white;
+  margin: 5rem;
+  padding-block: 4rem;
+}
+
+.foot {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f0ecff; /* You can keep this or change it to blue */
+  border-top: 5px solid red; /* Changed to red */
+  margin-top: 20px;
+  color: red; /* Changed to red */
+}
+
+/* blog */
+.blogNav {
+  background-color: #f0ecff; /* You can keep this or change it to blue */
+  padding-block: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.bloginnerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+/* RESPONSIVENESS */
+
+/* responsive code */
+@media (min-width: 260px) and (max-width: 460px) {
+  .innerNav {
+    padding: 0 10px;
+  }
+  .navItems {
+    display: none;
+    flex-direction: column;
+  }
+  .hamburger {
+    display: block;
+    font-size: 25px;
+    font-weight: 900;
+    color: blue; /* Changed to blue */
+    cursor: pointer;
+  }
+
+  #toggle:checked + .navRight .navItems {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #f0ecff; /* You can keep this or change it to blue */
+    flex-direction: column;
+   
