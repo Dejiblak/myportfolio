@@ -18,7 +18,7 @@ body {
   padding: 0 20px;
 }
 
-/* Navigation */
+/* Navbar */
 .topmostNav {
   background-color: #1e1e1e;
   padding: 1rem 0;
@@ -36,6 +36,7 @@ body {
   font-size: 2rem;
   color: #fff;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navItems {
@@ -60,6 +61,7 @@ body {
   padding: 80px 0 50px;
   background-color: #f1f1f1;
   margin-top: 5rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .banner {
@@ -72,126 +74,142 @@ body {
 .bannerContent h1 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #1e1e1e;
 }
 
 .bannerContent p {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 20px;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .bannerImg img {
-  width: 250px; /* Reduced width */
-  height: 250px; /* Reduced height */
-  object-fit: cover;
+  max-width: 300px;
   border-radius: 10px;
 }
 
 /* Services Section */
 .services {
   display: flex;
-  justify-content: space-between;
-  margin: 50px 0;
+  gap: 30px;
+  margin-top: 80px;
 }
 
 .serviceCard {
   background-color: #fff;
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   border-radius: 10px;
-  width: 30%;
-}
-
-.serviceCard span {
-  font-size: 3rem;
-  color: #ff6347;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
 }
 
 .serviceCard h3 {
-  font-size: 1.5rem;
-  color: #1e1e1e;
-  margin-top: 15px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
 .serviceCard p {
+  margin-top: 1rem;
   font-size: 1rem;
-  color: #555;
+  line-height: 1.6;
+}
+
+.serviceCard span {
+  font-size: 2.5rem;
 }
 
 /* About Section */
 .secTwo {
-  margin: 60px 0;
-  padding: 40px 0;
-  background-color: #ffffff;
+  padding: 60px 0;
+  background-color: #fff;
 }
 
 .base {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+}
+
+.baseContent h6 {
+  font-size: 1.1rem;
+  color: #ff6347;
 }
 
 .baseContent h1 {
-  font-size: 2rem;
-  color: #1e1e1e;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 20px 0;
 }
 
 .baseContent p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
 }
 
 .baseImg img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
+  max-width: 400px;
   border-radius: 10px;
-}
-
-/* Button Styling */
-button {
-  background-color: #ff6347;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-button:hover {
-  background-color: #ff4500;
-  transition: background-color 0.3s ease;
 }
 
 /* Education Section */
 .secThree {
-  background-color: #fafafa;
+  background-color: #f9f9f9;
   padding: 60px 0;
 }
 
-.eduSec h2 {
+.eduSec {
+  display: flex;
+  justify-content: center;
+}
+
+.eduContent h2 {
   font-size: 2rem;
   color: #333;
-  margin-bottom: 20px;
 }
 
-.eduSec ul {
-  list-style-type: none;
+.eduContent ul {
+  list-style: none;
+  margin-top: 1rem;
 }
 
-.eduSec li {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 15px;
+.eduContent ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Skills Section */
+.secFour {
+  padding: 60px 0;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skillContent h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.skillContent h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.skillContent ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.skillContent ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 /* Contact Section */
 .secFive {
-  background-color: #ffffff;
   padding: 60px 0;
 }
 
@@ -200,10 +218,12 @@ button:hover {
   justify-content: space-between;
 }
 
-.contactLeft img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
+.contactLeft {
+  flex: 1;
+}
+
+.contactRight {
+  flex: 2;
 }
 
 .contactForm {
@@ -212,223 +232,104 @@ button:hover {
   gap: 20px;
 }
 
+.contactForm .formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
 .contactForm input,
 .contactForm textarea {
-  padding: 12px;
+  padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-button[type="submit"] {
+.contactForm button {
   background-color: #ff6347;
-  color: white;
-  padding: 12px;
+  color: #fff;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
 }
 
-button[type="submit"]:hover {
-  background-color: #ff4500;
+.contactForm button:hover {
+  background-color: #e55347;
 }
 
 /* Footer Section */
-.foot {
+.secSix {
+  padding: 20px 0;
   background-color: #1e1e1e;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
 }
 
-/* iPhone 12 Mini (375px) */
-@media only screen and (max-width: 375px) {
-  /* Navbar Adjustments */
-  .innerNav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.foot {
+  text-align: center;
+  color: #fff;
+}
 
-  .navItems {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .navItems a {
-    text-align: left;
-    padding: 10px;
-    width: 100%;
-  }
-
-  #toggle:checked ~ .navItems {
-    display: flex;
-  }
-
-  /* Banner Section Adjustments */
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
   .banner {
     flex-direction: column;
     align-items: center;
   }
 
-  .bannerContent h1 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .bannerContent p {
-    font-size: 0.9rem;
-    text-align: center;
-  }
-
-  .bannerImg img {
-    width: 200px; /* Smaller image */
-    height: 200px;
-  }
-
-  /* Services Section Adjustments */
   .services {
     flex-direction: column;
-    align-items: center;
+    gap: 40px;
   }
 
-  .serviceCard {
-    width: 80%;
-    margin-bottom: 30px;
-  }
-
-  /* About Section Adjustments */
   .base {
     flex-direction: column;
     text-align: center;
   }
 
-  .baseContent h1 {
-    font-size: 1.8rem;
-  }
-
-  .baseContent p {
-    font-size: 0.95rem;
-  }
-
   .baseImg img {
-    width: 80%;
-    height: auto;
+    max-width: 100%;
   }
 
-  /* Education Section Adjustments */
-  .eduSec h2 {
-    font-size: 1.5rem;
-  }
-
-  .eduSec ul {
-    padding-left: 20px;
-  }
-
-  .eduSec li {
-    font-size: 0.95rem;
-  }
-
-  /* Contact Section Adjustments */
   .contact {
     flex-direction: column;
-    text-align: center;
   }
 
-  .contactLeft img {
-    max-width: 300px;
-    margin-bottom: 30px;
-  }
-
-  .contactForm input,
-  .contactForm textarea {
+  .contactLeft, .contactRight {
+    flex: none;
     width: 100%;
-  }
-
-  /* Footer Adjustments */
-  .foot {
-    font-size: 0.85rem;
   }
 }
 
-/* iPad Landscape (768px) */
-@media only screen and (max-width: 768px) {
-  /* Navbar Adjustments */
-  .innerNav {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
+@media (max-width: 768px) {
   .navItems {
-    display: flex;
-    gap: 15px;
+    flex-direction: column;
+    gap: 10px;
   }
 
-  /* Banner Section Adjustments */
   .bannerContent h1 {
     font-size: 2rem;
   }
 
   .bannerContent p {
-    font-size: 1.1rem;
-  }
-
-  .bannerImg img {
-    width: 300px;
-    height: 300px;
-  }
-
-  /* Services Section Adjustments */
-  .services {
-    flex-direction: row;
-    justify-content: space-between;
+    font-size: 1rem;
   }
 
   .serviceCard {
-    width: 32%;
+    flex: 1;
+    width: 100%;
+    text-align: center;
   }
 
-  /* About Section Adjustments */
-  .base {
-    flex-direction: row;
-    text-align: left;
+  .skills ul li {
+    font-size: 1rem;
   }
 
-  .baseContent h1 {
-    font-size: 2.2rem;
-  }
-
-  .baseContent p {
-    font-size: 1.1rem;
-  }
-
-  .baseImg img {
-    width: 35%;
-  }
-
-  /* Education Section Adjustments */
-  .eduSec h2 {
-    font-size: 1.8rem;
-  }
-
-  .eduSec ul {
-    padding-left: 20px;
-  }
-
-  /* Contact Section Adjustments */
-  .contact {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .contactForm {
-    width: 60%;
-  }
-
-  .contactLeft img {
-    width: 30%;
+  .contactForm button {
+    font-size: 1.2rem;
   }
 }
